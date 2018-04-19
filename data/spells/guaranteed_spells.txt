@@ -796,7 +796,7 @@ basechance 1
 #spell "Mists of the Blessed Isle"
 #basechance 0
 #chanceinc anymagic not air *0
-#chanceinc primaryrace sidhe 1
+#chanceinc primaryrace "Sidhe" 1
 #chanceinc spells "Formorian death" *0
 #chanceinc spells "ys" *0
 #end
@@ -818,7 +818,7 @@ basechance 1
 #chanceinc anymagic not nature *0
 #chanceinc nationtag fae 0.05
 #chanceinc hasthemetheme fae 0.05
-#chanceinc primaryrace sidhe 1
+#chanceinc primaryrace "Sidhe" 1
 #chanceinc spells "Maverni Astral" *0
 #chanceinc spells "Maverni Nature" *0
 #chanceinc spells "Formorian death" *0
@@ -849,7 +849,7 @@ basechance 1
 #basechance 0
 #chanceinc primaryrace "Fomorian" 1
 #chanceinc nationtag nordic 1
-#chanceinc hasthemetheme nordic 1i
+#chanceinc hasthemetheme nordic 1
 #chanceinc spells "Maverni Astral" *0
 #chanceinc spells "Maverni Nature" *0
 #chanceinc spells "sidhe nature" *0
