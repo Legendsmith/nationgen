@@ -250,10 +250,8 @@
 #spell "Hidden in Barrows"
 #spell "Call from Vanhalla"
 #basechance 0
-#chanceinc nationtag nordic 1
-#chanceinc hasthemetheme nordic 1
-#chanceinc anymagic air 1
-#chanceinc random 0.25 *0
+#chanceinc primaryrace "Van" 1
+#chanceinc anymagic not air *0
 #chanceinc spells "midgard spells" *0
 #end
 
@@ -284,10 +282,8 @@
 #spell "Battle Fury"
 #spell "Ragnarok"
 #basechance 0
-#chanceinc nationtag nordic 1
-#chanceinc hasthemetheme nordic 1
+#chanceinc primaryrace "Van" 1
 #chanceinc anymagic not blood *0
-#chanceinc random 0.25 *0
 #chanceinc spells "midgard spells" *0
 #end
 
@@ -298,9 +294,9 @@
 #spell "Offering to the Fates"
 #spell "Battle Fury"
 #basechance 0
-#chanceinc nationtag not nordic *0
 #chanceinc magewithpaths blood holy 1
 #chanceinc anymagic not blood *0
+#chanceinc primaryrace not "Van" *0
 #end
 
 
@@ -316,10 +312,9 @@
 #spell "Teachings of Malphas"
 #spell "Pact of Blood and Fire"
 #spell "Contact Scorpion Lord"
+#spell "Liquid Flames of Rhuax"
 #basechance 0
-#chanceinc nationtag abysian 1
-#chanceinc hasthemetheme abysian 1
-#chanceinc random 0.25 *0
+#chanceinc primaryrace "Abysian" 1
 #end
 
 #new
@@ -340,10 +335,8 @@
 #spell "Rivers of Lava"
 #spell "Children of Catharsis"
 #basechance 0
-#chanceinc nationtag abysian 1
-#chanceinc hasthemetheme abysian 1
 #chanceinc anymagic fire 1
-#chanceinc random 0.25 *0
+#chanceinc primaryrace not "Abysian" *0
 #end
 
 #new
@@ -644,7 +637,7 @@ basechance 1
 #spell "Wails of the Damned"
 #basechance 0
 #chanceinc nationtag reanimation 1
-#chanceinc command undead 0.025
+#chanceinc command #undead 0.025
 #end
 
 #new
@@ -673,10 +666,8 @@ basechance 1
 #basechance 0
 #chanceinc nationtag boreal 1
 #chanceinc hasthemetheme boreal 1
-#chanceinc command not resources *0
+#chanceinc command not #resources *0
 #chanceinc anymagic not earth *0
-#chanceinc anyunitfilter warriorculture *0
-#chanceinc spells "Maverni Nature" *0
 #end
 
 #new
@@ -686,7 +677,6 @@ basechance 1
 #chanceinc nationtag boreal 1
 #chanceinc hasthemetheme boreal 1
 #chanceinc anymagic not water *0
-#chanceinc anyunitfilter warriorculture *0
 #end
 
 --Maverni
@@ -706,7 +696,6 @@ basechance 1
 #chanceinc nationtag fae 0.05
 #chanceinc hasthemetheme fae 0.05
 #chanceinc hasthemetheme not boreal *0
-#chanceinc spells "Ulm forge spells" *0
 #chanceinc spells "Lizard spells" *0
 #chanceinc spells "sidhe nature" *0
 #end
@@ -719,14 +708,7 @@ basechance 1
 #basechance 0
 #chanceinc anytheme boreal 1
 #chanceinc nationtag boreal 1
-#chanceinc primaryrace human 0.5
 #chanceinc anymagic not astral *0
-#chanceinc nationtag not boreal *0
-#chanceinc hasthemetheme not boreal *0
-#chanceinc spells "TC non-death spells" *0
-#chanceinc spells "Ulm forge spells" *0
-#chanceinc spells "Lizard spells" *0
-#chanceinc spells "sidhe nature" *0
 #end
 
 --machaka
@@ -778,21 +760,15 @@ basechance 1
 #new
 #name "Sauro Misc"
 #spell "Androphagy"
-#basechance 0
-#chanceinc nationtag amazon 1
-#chanceinc hasthemetheme amazon 1
-#chanceinc nationtag occidental 1
-#chanceinc hasthemetheme occidental 1
-#chanceinc anymagic not blood *0
-#end
-
-#new
-#name "Sauro Priest spells"
+#spell "Daughter of Typhon"
+#spell "Call Ancestor"
+#spell "Rescue from the Underworld"
+#spell "Consult Ancestors"
 #spell "Prayers of Battle"
 #spell "Eye of the Gods"
-#basechance 0
-#chanceinc nationtag matriarchal 1
-#chanceinc hasthemetheme matriarchal 1
+#basechance 1
+#chanceinc anymagic not blood *0
+#chanceinc primaryrace not "Amazon human" *0
 #end
 
 --halfmen
@@ -802,6 +778,7 @@ basechance 1
 #basechance 0
 #chanceinc primaryrace not "Halfmen" *0
 #chanceinc hasthemetheme advanced 1
+#chanceinc hasthemetheme civilized 1
 #end
 
 --sidhe
@@ -819,8 +796,7 @@ basechance 1
 #spell "Mists of the Blessed Isle"
 #basechance 0
 #chanceinc anymagic not air *0
-#chanceinc nationtag fae 0.05
-#chanceinc hasthemetheme fae 0.05
+#chanceinc primaryrace sidhe 1
 #chanceinc spells "Formorian death" *0
 #chanceinc spells "ys" *0
 #end
@@ -842,6 +818,7 @@ basechance 1
 #chanceinc anymagic not nature *0
 #chanceinc nationtag fae 0.05
 #chanceinc hasthemetheme fae 0.05
+#chanceinc primaryrace sidhe 1
 #chanceinc spells "Maverni Astral" *0
 #chanceinc spells "Maverni Nature" *0
 #chanceinc spells "Formorian death" *0
@@ -872,7 +849,7 @@ basechance 1
 #basechance 0
 #chanceinc primaryrace "Fomorian" 1
 #chanceinc nationtag nordic 1
-#chanceinc hasthemetheme nordic 1
+#chanceinc hasthemetheme nordic 1i
 #chanceinc spells "Maverni Astral" *0
 #chanceinc spells "Maverni Nature" *0
 #chanceinc spells "sidhe nature" *0
@@ -910,7 +887,7 @@ basechance 1
 #spell "Teachings of Arakiel"
 #spell "The Chaos Serpent"
 #basechance 0
-#chanceinc primaryrace Avvite 1
+#chanceinc primaryrace "Avvite" 1
 #end
 
 #new
@@ -956,6 +933,7 @@ basechance 1
 #spell "Angles of Tindalos"
 #spell "Send Hound of Tindalos"
 #spell "Enter the Void"
+#spell "Open Void Gate"
 #basechance 0
 #chanceinc anymagic astral 1
 #chanceinc primaryrace not "Illithid" *0
@@ -1050,3 +1028,14 @@ basechance 1
 #chanceinc spells "Maverni Nature" *0
 #end
 
+
+--imperial spells
+#new "imperial death"
+#spell "Soul Gate"
+#spell "Second Service"
+#spell "Ghost Legion"
+#spell "Ghostly Legionnaires"
+#basechance 0
+#chanceinc primaryrace "Imperial human" 1
+#chanceinc anymagic not death  *0
+#end

@@ -233,7 +233,7 @@
 #spell "Royal Protection"
 #basechance 0
 #chanceinc nationtag reanimation 0.075
-#chanceinc command undead 0.025
+#chanceinc command #undead 0.025
 #chanceinc diversity not 3 *2
 #chanceinc diversity not 2 *2
 #end
@@ -378,7 +378,7 @@
 #basechance 0
 #chanceinc anymagic death 0.025
 #chanceinc nationtag reanimation 0.075
-#chanceinc command undead 0.025
+#chanceinc command #undead 0.025
 #chanceinc primaryrace not human *0
 #end
 
@@ -420,7 +420,7 @@
 #spell "Gates of Death"
 #basechance 0.01
 #chanceinc anymagic death 0.2
-#chanceinc command undead 0.025
+#chanceinc command #undead 0.025
 #end
 
 #new
@@ -625,9 +625,32 @@
 #end
 
 #new
-#name "random undead"
+#name "random #undead"
 #spell "Unholy Resilience"
 #spell "Resilience of the Shadelands"
 #basechance 0
-#chanceinc command undead 0.25
+#chanceinc command #undead 0.25
+#end
+
+#new
+#name "Contact Nemedian"
+#spell "Contact Nemedian"
+#basechance 0.1
+#chanceinc magewithpaths air death *5
+#chanceinc primaryrace "Sidhe" *2
+#chanceinc primaryrace "Amazon human" *5
+#end
+
+#new
+#name "ME ice randoms"
+#name "Entomb in Ice"
+#name "Frozen Aura"
+#name "Curse of Thetis"
+#name "Animate Ice"
+#name "Icy Blast"
+#basechance 0.1
+#chanceinc anymagic water 1
+#chanceinc hasthemetheme "spreadcold"
+#chanceinc hasthemetheme "spreadcold 3" *5
+#chanceinc hasthemetheme "spreadcold 5" *5
 #end
