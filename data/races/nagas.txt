@@ -16,6 +16,7 @@
 
 #nationcommand "#idealcold -2"
 #nationcommand "#uwbuild 1"
+#nationcommand "#riverstart"
 
 #longsyllables /data/names/nations/monkey/longsyllables.txt
 #shortsyllables /data/names/nations/monkey/shortsyllables.txt
