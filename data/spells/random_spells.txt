@@ -311,7 +311,7 @@
 
 #new
 #name "Arcosephale titan spells"
-#spell "Titan of War and Wisdom"
+#spell "Titan of War & Wisdom"
 #spell "Titan of the Seas"
 #spell "Titan of the Underworld"
 #basechance 0.015
