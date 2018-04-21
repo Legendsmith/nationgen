@@ -643,11 +643,11 @@
 
 #new
 #name "ME ice randoms"
-#name "Entomb in Ice"
-#name "Frozen Aura"
-#name "Curse of Thetis"
-#name "Animate Ice"
-#name "Icy Blast"
+#spell "Entomb in Ice"
+#spell "Frozen Aura"
+#spell "Curse of Thetis"
+#spell "Animate Ice"
+#spell "Icy Blast"
 #basechance 0.1
 #chanceinc anymagic water 1
 #chanceinc hasthemetheme "spreadcold"

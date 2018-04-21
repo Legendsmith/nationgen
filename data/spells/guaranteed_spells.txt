@@ -648,7 +648,7 @@ basechance 1
 #basechance 0 
 #chanceinc nationtag boreal 1
 #chanceinc hasthemetheme boreal 1
-#chanceinc anyunitfilter not warriorculture *0
+#chanceinc anyunitfilter not warriorculture *0.8
 #chanceinc anymagic not death *0
 #chanceinc spells "Maverni Nature" *0
 #end
@@ -728,11 +728,7 @@ basechance 1
 #chanceinc nationtag occidental 1
 #chanceinc hasthemetheme occidental 1
 #chanceinc magewithpaths nature death 1
-#chanceinc spells "Maverni Astral" *0
-#chanceinc spells "Maverni Nature" *0
-#chanceinc spells "sidhe nature" *0
-#chanceinc hasthemetheme primitive 1
-#chanceinc nationtag primitive 1
+#chanceinc primaryrace not "Austral human" or secondaryrace not "Austral human" *0
 #end
 
 #new
@@ -1030,12 +1026,13 @@ basechance 1
 
 
 --imperial spells
-#new "imperial death"
+#new
+#name "imperial death"
 #spell "Soul Gate"
 #spell "Second Service"
 #spell "Ghost Legion"
 #spell "Ghostly Legionnaires"
 #basechance 0
 #chanceinc primaryrace "Imperial human" 1
-#chanceinc anymagic not death  *0
+#chanceinc anymagic not death *0
 #end
